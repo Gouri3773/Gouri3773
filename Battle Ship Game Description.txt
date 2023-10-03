@@ -1,0 +1,37 @@
+Step 1 – Create the Ocean Map:
+        Create a 10x10 grid using a two-dimensional array to represent the ocean map.
+        Display the grid to the user with indexes and pipe characters.
+        Initialize the grid as empty.
+
+Step 2 – Deploy Player's Ships:
+        Ask the player to place 5 ships on the grid.
+        For each ship, ask the player for its coordinates (X and Y).
+        Ensure that the chosen coordinates are within the grid and not already occupied by another ship.
+        Update the grid to reflect the player's ship placements with '1' and hide them when displaying the grid.
+
+Step 3 – Deploy Computer's Ships:
+        The computer will place 5 ships randomly on the grid.
+        Ensure that the chosen coordinates are within the grid and not already occupied by another ship (player's or computer's).
+        Keep generating random coordinates until all computer ships are placed correctly.
+        Store computer ships as '2' on the grid but keep them invisible when displaying the grid.
+
+Step 4 – Battle (Player's Turn and Computer's Turn):
+
+      The game alternates between the player and computer's turns.
+      During a player's turn, they guess X and Y coordinates of the opponent's ships.
+      Validate the coordinates to ensure they are within the grid and not previously guessed.
+      Evaluate the result:
+      If the player guesses correctly, mark the grid with '!' and notify the player.
+      If the player guesses their own ship, mark the grid with 'x' and notify the player.
+      If the player misses, mark the grid with '-' and notify the player.
+      During the computer's turn, generate random X and Y coordinates.
+      Validate the coordinates to ensure they are within the grid and not previously guessed.
+      Evaluate the result:
+      If the computer guesses the player's ship, mark the grid with 'x' and notify the player.
+      If the computer guesses its own ship, mark the grid with '!' and notify the player.
+      If the computer misses, notify the player.
+Step 5 - Game Over:
+
+      Continue the battle until one player or computer has no ships left.
+      Display the final state of the ocean map and announce the winner (player or computer).
+      Remember to use loops, conditionals, and a Scanner to get user input for coordinates. This project will help you practice working with arrays, user input, and basic game logic in Java.
